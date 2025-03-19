@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadinCloud</title>
+    <link rel="icon" type="image/jpeg" href="./imgs/log_win.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/documentacion.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./imgs/log_bar.jpeg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  menu-items d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./registro.html">Regístrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./inicio.html"><button class="btn-inicia-sesion">Inicia sesión</button></a>
+              </li>
+            </ul>
+      </nav>
+      <div class="container mt-5">
+        <h1 class="text-center">Documentación de la Aplicación</h1>
+        <div class="accordion" id="documentacionAccordion">
+            
+            <!-- Sección Inicio -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingInicio">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInicio" aria-expanded="false" aria-controls="collapseInicio">
+                        Inicio de la Aplicación
+                    </button>
+                </h2>
+                <div id="collapseInicio" class="accordion-collapse collapse" aria-labelledby="headingInicio" data-bs-parent="#documentacionAccordion">
+                    <div class="accordion-body">
+                        La página de inicio muestra información general del sitio y permite acceder a la creación de cuenta, inicio de sesión y la ayuda.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección Registro -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingRegistro">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegistro" aria-expanded="false" aria-controls="collapseRegistro">
+                        Registro de Usuario
+                    </button>
+                </h2>
+                <div id="collapseRegistro" class="accordion-collapse collapse" aria-labelledby="headingRegistro" data-bs-parent="#documentacionAccordion">
+                    <div class="accordion-body">
+                        El usuario debe completar un formulario con su correo, nombres, apellidos y fecha de nacimiento. Se requiere una contraseña segura.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección Inicio de Sesión -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingLogin">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin">
+                        Inicio de Sesión
+                    </button>
+                </h2>
+                <div id="collapseLogin" class="accordion-collapse collapse" aria-labelledby="headingLogin" data-bs-parent="#documentacionAccordion">
+                    <div class="accordion-body">
+                        Se debe ingresar usuario y contraseña. Si son correctos, el usuario accede a su cuenta. Se ofrece recuperación de contraseña.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección Menú de Hojas del Usuario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingMenuHojas">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuHojas" aria-expanded="false" aria-controls="collapseMenuHojas">
+                        Menú de Hojas del Usuario
+                    </button>
+                </h2>
+                <div id="collapseMenuHojas" class="accordion-collapse collapse" aria-labelledby="headingMenuHojas" data-bs-parent="#documentacionAccordion">
+                    <div class="accordion-body">
+                        En este menú, el usuario puede crear, modificar o eliminar hojas de su diario. Se muestra una frase diaria.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección Diario del Usuario -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDiario">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiario" aria-expanded="false" aria-controls="collapseDiario">
+                        Diario del Usuario
+                    </button>
+                </h2>
+                <div id="collapseDiario" class="accordion-collapse collapse" aria-labelledby="headingDiario" data-bs-parent="#documentacionAccordion">
+                    <div class="accordion-body">
+                        Espacio donde el usuario puede escribir y modificar sus notas con herramientas de edición y guardado automático.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

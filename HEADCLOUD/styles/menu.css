@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sniglet&display=swap');
+
+body {
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CBE1EE !important;
+    background: linear-gradient(to bottom, #CBE1EE, #FCFEFD, #012A40);
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #FCFEFD !important;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    padding: 0px 20px;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    padding-right: 20px;
+}
+
+.menu-items .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #606060;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-items .nav-link:hover {
+    color: #012A40;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el perfil y botón de cuenta */
+.btn-profile {
+    width: 40px;
+    height: 40px;
+    background-color: #606060;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FCFEFD;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-profile:hover {
+    background-color: #012A40;
+    transform: scale(1.1);
+}
+
+.profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nav-item.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .dropdown-toggle {
+    font-weight: 700;
+    color: #606060;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav-item .dropdown-toggle:hover {
+    color: #012A40;
+}
+
+/* Contenedores */
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 960px;
+}
+
+.custom-box {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #FCFEFD;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-half {
+    flex: 1;
+    width: 100%;
+    background-color: #a3ddf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-half {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFEFD;
+}
+
+.bottom-half button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #012A40;
+    color: #FCFEFD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bottom-half button:hover{
+    transform: scale(1.1);
+}
+
+.bottom-half button i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.responsive-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.offcanvas-start {
+    width: 250px;
+    height: 100vh !important;
+    overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+    .offcanvas-start {
+        width: 80% !important;
+        max-width: 300px;
+        height: 100vh !important;
+        overflow-y: auto;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        overflow-y: auto;
+        min-height: 100%;
+        gap: 10px;
+    }
+
+    .offcanvas-body .nav-item {
+        width: 100%;
+    }
+
+    .offcanvas-body .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        font-size: 18px;
+        display: block;
+        color: #606060;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .offcanvas-body .nav-link:hover {
+        transform: scale(1.1);
+        color: #012A40;
+        text-decoration: underline;
+    }
+}
+

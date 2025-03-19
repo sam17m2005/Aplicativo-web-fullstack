@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sniglet&display=swap');
+
+body {
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #FCFEFD !important;
+}
+
+.navbar.navbar-expand-lg .container-fluid .navbar-brand img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    padding: 0px 20px;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    padding-right: 20px;
+}
+
+.navbar.navbar-expand-lg .container-fluid .navbar-brand img:hover {
+    transform: scale(1.2);
+}
+
+.navbar.navbar-expand-lg .container-fluid .navbar-brand {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+body {
+    background-color: #CBE1EE !important;
+}
+
+.btn-inicia-sesion {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #FCFEFD;
+    padding: 9px 25px;
+    background: #606060;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-inicia-sesion:hover {
+    background: #012A40;
+    transform: scale(1.05);
+}
+
+.menu-items .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #606060;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-items .nav-link:hover {
+    color: #012A40;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para pantallas menores a 600px */
+@media (max-width: 600px) {
+    .navbar-nav {
+        display: none; /* Oculta los enlaces en pantallas pequeñas */
+    }
+
+    .menu-button {
+        display: block;
+        margin-left: auto;
+        font-weight: 700;
+        color: #FCFEFD;
+        padding: 9px 25px;
+        background: #606060;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .menu-button.active + .navbar-nav {
+        display: block; 
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #FFF;
+        border: 1px solid #CCC;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        display: block; 
+        padding: 5px 0;
+    }
+}
